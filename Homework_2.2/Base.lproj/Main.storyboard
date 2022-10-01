@@ -87,7 +87,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ieM-PW-wf7">
                                         <rect key="frame" x="110" y="0.0" width="178" height="144"/>
                                         <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xlG-ae-pOO">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xlG-ae-pOO">
                                                 <rect key="frame" x="-2" y="0.0" width="182" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="178" id="Q2U-QS-4gT"/>
@@ -105,7 +105,7 @@
                                                     <action selector="greenColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="B0D-Ga-sHD"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oqR-U4-2MK">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oqR-U4-2MK">
                                                 <rect key="frame" x="-2" y="114" width="182" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="178" id="HjR-ZZ-0Og"/>
@@ -132,13 +132,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueColorLabel" destination="h31-hb-qcB" id="WM0-oA-45X"/>
                         <outlet property="blueColorRangedLabel" destination="qMb-iX-9uF" id="HPt-UL-yic"/>
                         <outlet property="blueColorSlider" destination="oqR-U4-2MK" id="6hd-cG-HiT"/>
-                        <outlet property="greenColorLabel" destination="SP1-8B-p1Y" id="vL3-RU-KB4"/>
                         <outlet property="greenColorRangedLabel" destination="UPV-K6-Ejk" id="kla-xn-52Q"/>
                         <outlet property="greenColorSlider" destination="F6P-Oc-YnF" id="RKw-er-SrM"/>
-                        <outlet property="redColorLabel" destination="vSg-99-XOi" id="d60-cj-a0e"/>
                         <outlet property="redColorRangedLabel" destination="aMf-zA-Gp8" id="1Sp-6j-aAH"/>
                         <outlet property="redColorSlider" destination="xlG-ae-pOO" id="09Q-kW-GHf"/>
                         <outlet property="viewMixColor" destination="hzV-Ab-Flx" id="H5d-g5-ZVz"/>
