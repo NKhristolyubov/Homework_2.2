@@ -93,7 +93,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="178" id="Q2U-QS-4gT"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="redColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Ert-ir-EZC"/>
+                                                    <action selector="rgbSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZJD-JS-GuS"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-Oc-YnF">
@@ -102,7 +102,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="178" id="XNg-Eb-R6D"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="greenColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="B0D-Ga-sHD"/>
+                                                    <action selector="rgbSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="LhT-4L-DV8"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oqR-U4-2MK">
@@ -111,7 +111,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="178" id="HjR-ZZ-0Og"/>
                                                 </constraints>
                                                 <connections>
-                                                    <action selector="blueColorSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="SNp-nd-oyt"/>
+                                                    <action selector="rgbSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="CrC-1C-AQ8"/>
                                                 </connections>
                                             </slider>
                                         </subviews>

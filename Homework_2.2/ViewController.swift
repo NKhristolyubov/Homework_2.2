@@ -22,29 +22,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setColor()
+        
+        setValue()
+    }
+
+    @IBAction func rgbSliderAction(_ sender: UISlider) {
+       setColor()
+        
+        setValue()
+    }
+    
+    private func setColor() {
         viewMixColor.backgroundColor = UIColor(
             red: CGFloat(redColorSlider.value),
             green: CGFloat(greenColorSlider.value),
-            blue: CGFloat(greenColorSlider.value),
-            alpha: 1)
+            blue: CGFloat(blueColorSlider.value),
+            alpha: 1
+        )
     }
-
-    @IBAction func redColorSliderAction() {
+    
+    private func setValue() {
         redColorRangedLabel.text = String(format: "%.2f",redColorSlider.value)
-        
-        viewMixColor.backgroundColor = UIColor(red: CGFloat(redColorSlider.value), green: CGFloat(greenColorSlider.value), blue: CGFloat(blueColorSlider.value), alpha: 1)
-    }
-    
-    @IBAction func greenColorSliderAction() {
         greenColorRangedLabel.text = String(format: "%.2f",greenColorSlider.value)
-        viewMixColor.backgroundColor = UIColor(red: CGFloat(redColorSlider.value), green: CGFloat(greenColorSlider.value), blue: CGFloat(blueColorSlider.value), alpha: 1)
-    }
-    
-    @IBAction func blueColorSliderAction() {
         blueColorRangedLabel.text = String(format: "%.2f",blueColorSlider.value)
-        viewMixColor.backgroundColor = UIColor(red: CGFloat(redColorSlider.value), green: CGFloat(greenColorSlider.value), blue: CGFloat(blueColorSlider.value), alpha: 1)
     }
-    
-    
 }
 
